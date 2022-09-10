@@ -1,0 +1,41 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+<div class="text-center">
+    <h1 class="display-4">Server Info</h1>
+    <p>Use to discovery your Server Information</p>
+    <p></p>
+</div>
+
+
+<div class="limiter">
+    <div class="container-table100">
+        <div class="wrap-table100">
+            <div class="table100 ver1 m-b-110">
+                <div class="table100-head">
+
+                    <table>
+                        <thead>
+                            <tr class="row100 head">
+                                <th class="cell100 column1">Name</th>
+                                <th class="cell100 column2">Value</th>
+                              
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+                <div class="table100-body js-pscroll ps ps--active-y">
+                    <table>
+                        <tbody>
+                            @foreach (var item in Model.SelectedEnv)
+                            {
+                                 <tr class="row100 body">
+                                    <td class="cell100 column1">@item.Key</td>
+                                    <td class="cell100 column2">@item.Value</td>
+                                </tr>
+                            }                                                                                
+                   
+                        </tbody>
+                    </table>
