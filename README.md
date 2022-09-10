@@ -9,9 +9,11 @@ Tags: Container, Azure, WebSite, Inventory, ServerInfo
 
 # Server Info
 
-This application exposes Server and Client informations, resulted of a list from Environment.GetEnvironmentVariables method of dotnet.
+This application exposes Server and Client details and informations available in code (dotnet).
 
-Usefull in development time to know environment virables and other informations.
+Usefull to IT Admins to know details of environment, mainly in diferent contexts, such as contaniner environment.
+
+Usefull to developers in development time to know the environment virables and other informations about destination environment.
 
 Not recommended to leave on production environments with public access.
 
