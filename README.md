@@ -5,7 +5,15 @@ Platform: Linux Container
 Tags: Container, Azure, WebSite, Inventory, ServerInfo
 ---
 
-![GitHub](https://img.shields.io/github/license/microsoft/server-info) ![GitHub repo size](https://img.shields.io/github/repo-size/microsoft/server-info) [![Azure](https://badgen.net/badge/icon/azure?icon=azure&label)](https://azure.microsoft.com)
+![GitHub](https://img.shields.io/github/license/microsoft/server-info)
+
+![GitHub](https://img.shields.io/github/license/microsoft/server-info) 
+![GitHub repo size](https://img.shields.io/github/repo-size/microsoft/server-info) 
+[![Azure](https://badgen.net/badge/icon/azure?icon=azure&label)](https://azure.microsoft.com)
+
+![GitHub last commit](https://img.shields.io/github/last-commit/microsoft/server-info)
+![GitHub top language](https://img.shields.io/github/languages/top/microsoft/server-info)
+
 
 # Server Info
 
