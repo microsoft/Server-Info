@@ -15,17 +15,57 @@ Tags: Container, Azure, WebSite, Inventory, ServerInfo
 
 # Server Info
 
-This application exposes Server and Client details and informations available in code (dotnet).
+- Have you ever needed a tool that exposes some information of the request client? (What headers is comming to server, what client IP, in witch header?)
+- Have you ever needed a tool that exposes some enviroment variable that application is considering, in a non-develop environment?
+- Have you ever be curious what developer have the information to use in thier applicatons?
+
+This application exposes Server and Client request details available in code (dotnet).
 
 Usefull to IT Admins to know details of environment, mainly in diferent contexts, such as contaniner environment.
 
 Usefull to developers in development time to know the environment virables and other informations about destination environment.
 
-Not recommended to leave on production environments with public access.
+> [!IMPORTANT]
+> This is a debugging tool. Not recommended to leave on production environments with public access.
 
-This is the portable version to run in a Docker container.
+This is the portable version to run standalone, or in a Docker container.
 
-## 1) Site Overview
+## Pre-Requisites
+
+To run the project locally, you'll need to make sure the following tools are installed:
+
+- [.NET 9](https://dotnet.microsoft.com/downloads/)
+- [Git](https://git-scm.com/downloads)
+- [Azure Developer CLI (azd)](https://aka.ms/install-azd)
+- [Visual Studio Code](https://code.visualstudio.com/Download) or [Visual Studio](https://visualstudio.microsoft.com/downloads/)
+  - If using Visual Studio Code, install the [C# Dev Kit](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit)
+
+### Run the solution
+
+Follow these steps to run the project locally
+
+- Open your terminal
+- Navigate to your repos folder
+
+- Clone repository:
+
+  ```bash
+  git clone https://github.com/microsoft/Server-Info.git
+  ```
+
+- Navigate to cloned folder
+
+  ```bash
+  cd Server-info/Server-info
+  ```
+
+- Run the project:
+
+  ```bash
+  dotnet run
+  ````
+
+## Overview
 
 <br/>
 
@@ -37,11 +77,14 @@ This is the portable version to run in a Docker container.
 
 <br/>
 
-- Client site exposes information about client (browser) that is accessing the site, as well some client informations that is available in code.
+- Client tab exposes information about client (browser) that is accessing the site, as well some client informations that is available in code.
 
 <br/>
 
 ![Overview](images/server-info-2.png)
+
+- To see header information, scroll down to see more information about client request
+![Overview](images/server-info-3.png)
 
 ## Contributing
 
