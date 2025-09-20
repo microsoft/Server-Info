@@ -31,7 +31,7 @@
                             @foreach (var item in Model.Itens)
                             {
                                  <tr class="row100 body">
-                                    <td class="cell100 column1">@item.Key</td>
+                                    <td class="cell100 column1">@Html.Raw(item.Key)</td>
                                     <td class="cell100 column2">@item.Value</td>
                                 </tr>
                             }                                                                                

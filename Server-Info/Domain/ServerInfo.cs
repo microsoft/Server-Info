@@ -1,11 +1,9 @@
-﻿using Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage;
-using System.Collections;
+﻿using System.Collections;
 
 namespace Server_Info.Domain
 {
     public class ServerInfo : Info    
-    {
-        
+    {        
         public ServerInfo(HttpContext context, HttpRequest request) : base(context, request)
         {
             Parameters.Add("Machine Name", Environment.MachineName);
